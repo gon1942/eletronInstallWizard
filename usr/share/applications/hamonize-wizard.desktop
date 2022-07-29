@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Hamonize Install Wizard
+Name[ko]=하모나이즈 설치 마법사
+GenericName=Hamonize Install Wizard
+GenericName[ko]=하모나이즈 설치 마법사
+Comment=Connect to the Hamonize Center
+Comment[ko]=하모나이즈 설치 마법사
+Path=/usr/local/hamonize-wizard
+Exec=pkexec hamonize-wizard
+Terminal=false
+Type=Application
+Icon=hamonize-wizard
+Categories=Utility;Network;

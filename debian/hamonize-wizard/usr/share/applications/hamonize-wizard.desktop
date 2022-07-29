@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Hamonize wizard
+Name[ko]=하모나이즈 wizard 
+GenericName=Hamonize wizard
+GenericName[ko]=하모나이즈 wizard
+Comment=Connect to the Hamonize Center
+Comment[ko]=하모나이즈 wizard
+Path=/usr/local/hamonize-wizard
+Exec=pkexec hamonize-wizard
+Terminal=false
+Type=Application
+Icon=hamonize-wizard
+Categories=Utility;Network;

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd  /usr/local/hamonize-wizard/
+./hamonize-wizard --no-sandbox
+
+#exit 0;

@@ -1,0 +1,9 @@
+Package: hamonize-wizard
+Version: 1.0.1
+Architecture: amd64
+Maintainer: HamoniKR Team <hamonikr-packages@googlegroups.com>
+Installed-Size: 92872
+Section: unknown
+Priority: optional
+Homepage: https://hamonikr.org
+Description: Hamonize Install Wizard

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+
+<head>
+    <title>[ Hamonize ] PC 관리 프로그램 </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href="./assets/css/material-dashboard.css" rel="stylesheet" />
+    <link href="assets/css/material-dashboard.css" rel="stylesheet" />
+    <link href="assets/demo/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" /> -->
+    
+    
+    <link id="pagestyle" href="./assets/css/soft-ui-dashboard.css" rel="stylesheet">
+
+    <style>
+
+body{
+  background-color: white;
+}
+          .br {
+            border-radius: 8px;
+        }
+
+        .w80 {
+            width: 80%;
+        }
+
+        .w90 {
+            width: 90%;
+
+        }
+
+        .comment {
+            height: 10px;
+            background: #777;
+            margin-top: 20px;
+        }
+
+        @keyframes fullView {
+            100% {
+                width: 100%;
+            }
+        }
+
+
+        .animate {
+            animation: shimmer 2s infinite linear;
+            background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+            background-size: 1000px 100%;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+
+            100% {
+                background-position: 1000px 0;
+            }
+        } 
+
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            max-height: 100%;
+            background: rgba(0, 0, 0, 0.6) url('assets/img/FhHRx.gif') 50% 50% no-repeat;
+        } 
+
+    </style>
+
+
+</head>
+
+<body>
+    
+    
+
+
+
+    <div class="card card-background shadow-none card-background-mask-secondary" id="sidenavCard">
+        <div class="bg-gradient-dark card-body p-3 text-start  w-100"> <!-- p-3-->
+            <div class=" icon icon-shape bg-white shadow text-center mb-3 d-flex align-items-center justify-content-center border-radius-md">
+                <img src="./assets/img/title-logo.png" style="    margin-left: 104px;margin-top: 94px;">
+            </div>
+            
+            <div class="docs-info">
+                <h6 class="text-white up mb-2">𝓗𝓪𝓶𝓸𝓷𝓲𝔃𝓮 설치 마법사</h6>
+                <p class="text-xs "> 이 설치마법사는 원격관리 프로그램-Hamonize가 설치되는데 필요한  <br> 라이브러리들을 설치해 주는 마법사입니다.</p>
+                
+                <div class="ms-auto text-end">
+                    <a class="btn btn-link text-me px-3 mb-0" href="javascript:;" id="install"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>설치하기</a>
+                    <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;" id="uninstall"><i class="far fa-trash-alt me-2" aria-hidden="true"></i>삭제하기</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="ms-auto text-end">
+        <div class="container-fluid">
+            <div class="copyright float-right">
+                <i class="material-icons">- made by Invesume.</i>
+            </div>
+        </div>
+    </div>
+           
+    <div class="">
+        <div class="modal screen">
+            <div class="layerpop" style="font-weight: 900; width: 100%; margin-top: 150px; text-align: center;">
+                <p class="layerpop__container br animate" id="loadingInfoText"
+                    style="background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #7fabd6 36%);">
+                    진행중입니다.. 잠시만 기다려주세요..</p>
+            </div>
+        </div>
+    </div>   
+
+                  
+</body>
+<!--   Core JS Files   -->
+
+<script src="./assets/js/core/jquery.min.js"></script>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="./assets/js/core/popper.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $modal = $(".modal");
+
+        $(".modal--open").click(function () {
+            $modal.show();
+            // popupOpen(); 
+            return false;
+        });
+        $(".modal--close").click(function () {
+            $modal.hide();
+        });
+
+
+        // $("#install").click(function () {
+        //     $modal.show();
+        // });
+
+        // $("#uninstall").click(function () {
+        //     $modal.hide();
+        // });
+
+        
+    });
+
+    function popupOpen() {
+        console.log('fn--popupOpen');
+        // $('.layerpop').css("position", "absolute");
+        // // $('.layerpop').css("top", '300px');
+        // $('.layerpop').css("left", (($(window).width() - $('.layerpop').outerWidth()) / 8) + $(window)
+        //     .scrollLeft());
+        // $('#layerbox').show();
+    }
+</script>
+
+
+<script type="text/javascript" src="assets/js/index.js"></script>
+</html>
